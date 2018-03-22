@@ -1,0 +1,165 @@
+/*
+Theme Name: Velvet
+Theme URI: http://underscores.me/
+Author: IAHSP Team
+Author URI: https://iahsp.com
+Description: IAHSP members serve using the principles, practices, and education of approved Home Staging courses and designations.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: velvet
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Velvet is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Common Style
+	- Margin
+	- Background Colors
+# Sections
+# Callouts
+# Header
+	- Admin Bar
+	- Sub Page Header
+# Footer
+# Pages
+	- Contact Us
+	- FAST Track
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	# Common Style
+--------------------------------------------------------------*/
+/* margin */
+.space-bottom-3 { margin-bottom: 3px;	}
+.space-bottom-20 { margin-bottom: 20px; }
+
+/* Background Colors */
+.bg-color-white { background-color: #fff !important; }
+
+
+/* ====================================================
+	# Sections
+==================================================== */
+#graybg2 {
+	background-color: #fafafa;
+}
+
+
+/* ====================================================
+	# Callouts
+==================================================== */
+.bs-callout {
+	margin: 0px;
+}
+
+
+/* ====================================================
+	# Header
+==================================================== */
+@media screen and (max-width: 782px) {
+	/* Admin Bar */
+	.admin-bar #topHead { top: 46px;}
+	.admin-bar header#topNav.topHead { top: 86px; }
+	/* 	.admin-bar div#wrapper { top: 10px; } */
+	/* 	.admin-bar #main-footer { margin-top: 10px; } */
+
+	/* Not Logged On */
+	div#wrapper { top: 10px; }
+	#main-footer { margin-top: 10px; }
+
+	.admin-bar #wpadminbar { position: fixed !important; }
+}
+
+@media screen and (min-width: 783px) {
+	/* Admin Bar */
+	.admin-bar #topHead { top: 32px;}
+	.admin-bar header#topNav.topHead { top: 72px; }
+}
+
+/* Sub Page Header */
+#page-title {
+	background: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://d3oaxt0bwkjnjn.cloudfront.net/web/images/wwssw-header.jpg") !important;
+	background: -moz-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://d3oaxt0bwkjnjn.cloudfront.net/web/images/wwssw-header.jpg") !important;
+	background: -o-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://d3oaxt0bwkjnjn.cloudfront.net/web/images/wwssw-header.jpg") !important;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://d3oaxt0bwkjnjn.cloudfront.net/web/images/wwssw-header.jpg") !important;
+}
+
+#page-title > div > h1 { color: #fff; }
+#page-title > div > ul > li { color: #EAA824; }
+#page-title > div > ul > li.active { color: #fff; }
+
+
+/* ====================================================
+	# Footer
+==================================================== */
+#goldaddress {
+	color: gold;
+}
+
+.padding-footer {
+	padding: 30px 0;
+}
+
+
+/* ====================================================
+	# WordPress Stuff
+==================================================== */
+.aligncenter { 
+	text-align: center; 
+	display: block;
+	margin: auto;
+}
+
+
+/* ====================================================
+	# Pages
+==================================================== */
+/* Contact Us */
+.page-id-25 hr { margin: 20px 0px 20px 0px; }
+.page-id-25 .wpcf7-list-item { display: block; }
+
+/* FAST Track */
+#fast-track .outer-box h4 {
+	margin: 3px 0 0;
+	display: inline-block;
+	vertical-align: -webkit-baseline-middle;
+}
+
+#fast-track .outer-box {
+	margin: 0 10px 25px;
+	border: #ddd 1px solid;
+	border-radius: 7px;
+}
+
+#fast-track .sub-title {
+	margin: 0;
+	padding: 10px 0 10px 0;
+	border-radius: 7px 7px 0 0;
+	background-color: #f5f4f4;
+}
+
+#fast-track .outer-box button {
+	margin: 0;
+}
+
+#fast-track .outer-box .description {
+	margin-bottom: 0;
+	padding: 15px;
+}
+
+@media only screen and (max-width : 767px) {
+	#fast-track .outer-box h4 {
+		margin-bottom: 5px;
+	}
+}
