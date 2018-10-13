@@ -73,41 +73,46 @@
     <!-- Top Bar -->
         <header id="topHead" class="color">
             <div class="container">
-				<i class="fa fa-phone"></i> <a href="tel:8003927161">800-392-7161</a>
-				&bull;&nbsp; <i class="fa fa-envelope-o"></i> <a class="hidden-xs" href="mailto:help@iahsp.com">Help@IAHSP.com</a>
+            <i class="fa fa-phone"></i> <a href="tel:8003927161">800-392-7161</a>
+            &bull;&nbsp; <i class="fa fa-envelope-o"></i> <a class="hidden-xs" href="mailto:help@iahsp.com">Help@IAHSP.com</a>
 
-				<!-- Member Login -->
-				<div class="pull-right nav signin-dd">
-					<a id="quick_sign_in" class="btn btn-default btn-xs" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i><span class="hidden-xs"> Sign In</span></a>
+            <!-- Member Login -->
+            <?php if ($_SERVER["SERVER_NAME"] === "pages.iahsp.com") { ?>
+              <div class="pull-right nav signin-dd">
+                <a id="quick_sign_in" class="btn btn-default btn-xs" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i><span class="hidden-xs"> Profile Menu</span></a>
 
-					<div class="dropdown-menu" role="menu" aria-labelledby="quick_sign_in">
+                <div class="dropdown-menu" role="menu" aria-labelledby="quick_sign_in">
 
-						<h4>Sign In</h4>
+                  <h4>Sign In</h4>
 
-						<!-- Sustains width of popup.  Does nothing else. -->
-						<form role="form"></form>
+                  <!-- Sustains width of popup.  Does nothing else. -->
+                  <form role="form"></form>
 
-						<hr />
+                  <hr />
 
-						<!-- IAHSP President Login -->
-						<a href="https://iahsp.com/login" class="btn-facebook fullwidth radius3"><i class="fa fa-user" aria-hidden="true"></i> Member Login</a>
-						<a href="https://admin.iahsp.com/checkuser.php" target="_blank" class="btn-twitter fullwidth radius3"><i class="fa fa-external-link-square" aria-hidden="true"></i> President Login</a>
+                  <!-- IAHSP President Login -->
+                  <a href="https://iahsp.com/login" class="btn-facebook fullwidth radius3"><i class="fa fa-user" aria-hidden="true"></i> Member Login</a>
+                  <a href="https://admin.iahsp.com/checkuser.php" target="_blank" class="btn-twitter fullwidth radius3"><i class="fa fa-external-link-square" aria-hidden="true"></i> President Login</a>
 
-						<p class="bottom-create-account">
-							<a href="https://iahsp.com/register">New Member Registration</a>
-						</p>
-					</div>
-				</div>
+                  <p class="bottom-create-account">
+                    <a href="https://iahsp.com/register">New Member Registration</a>
+                  </p>
+                </div>
+              </div>
+            <?php } else { ?>
+              <div class="pull-right nav signin-dd">
+                <a id="quick_sign_in" class="btn btn-default btn-xs" href="https://iahsp.com" target="_blank"><i class="fa fa-user fa-lg"></i><span class="hidden-xs"> Visit IAHSP.com</span></a>
+              </div>
+            <?php } ?>
 
-				<!-- LINKS -->
-				<div class="pull-right nav hidden-xs">
-					<a href="https://www.facebook.com/InternationalAssociationofHomeStagingProfessionals/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-					<a href="https://plus.google.com/111999019043473881716" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
-					<a href="https://iahspblog.com/blog/" target="_blank"><i class="fa fa-wordpress fa-lg"></i></a>
-				</div>
-				<!-- /LINKS -->
-			</div>
-					
+            <!-- LINKS -->
+            <div class="pull-right nav hidden-xs">
+              <a href="https://www.facebook.com/InternationalAssociationofHomeStagingProfessionals/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+              <a href="https://plus.google.com/111999019043473881716" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+              <a href="https://iahspblog.com/blog/" target="_blank"><i class="fa fa-wordpress fa-lg"></i></a>
+            </div>
+            <!-- /LINKS -->
+          </div>
         </header>
         <!-- /Top Bar -->
 
@@ -128,84 +133,96 @@
                 <!-- Top Nav -->
                 <div class="navbar-collapse nav-main-collapse collapse pull-right">
                     <nav class="nav-main mega-menu">
-                        <ul class="nav nav-pills nav-main scroll-menu" id="topMain">
-                            <li><a href="https://iahsp.com/">HOME</a></li>
-                            <li><a href="https://iahsp.com/join">JOIN</a></li>
-                            <li><a href="https://iahsp.com/wwssw">WWSSW</a></li>
+                          <?php if ($_SERVER["SERVER_NAME"] === "pages.iahsp.com") { ?>
+                            <ul class="nav nav-pills nav-main scroll-menu" id="topMain">
+                              <li><a href="https://iahsp.com/">HOME</a></li>
+                              <li><a href="https://iahsp.com/join">JOIN</a></li>
+                              <li><a href="https://iahsp.com/wwssw">WWSSW</a></li>
 
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" href="#">
-                                    EVENTS <i class="fa fa-angle-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <!-- Public Content -->
-                                    <li><a href="https://iahspconexpo.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> 2018 IAHSP Conference</a></li>
-                                    <li><a href="https://www.eventbrite.com/e/iahsp-midwest-regional-conference-tickets-36834420744" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> IAHSP Midwest Regional Conference</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li class="dropdown">
-								<a class="dropdown-toggle" href="#">
-									EDUCATION <i class="fa fa-angle-down"></i>
-								</a>
-								<ul class="dropdown-menu">
-									<!-- Public Content -->
-                                    <li><a href="https://pages.iahsp.com/bts-designation-course"><i class="fa fa-external-link" aria-hidden="true"></i> Earn Your Buyer Trends Designation</a></li>
-                                    <li><a href="https://pages.iahsp.com/fast-track"><i class="fa fa-external-link" aria-hidden="true"></i> FAST Track Designation</a></li>
-								</ul>
-                            </li>
+                              <li class="dropdown">
+                                  <a class="dropdown-toggle" href="#">
+                                      EVENTS <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <!-- Public Content -->
+                                      <li><a href="https://iahspconexpo.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> 2018 IAHSP Conference</a></li>
+                                      <li><a href="https://www.eventbrite.com/e/iahsp-midwest-regional-conference-tickets-36834420744" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> IAHSP Midwest Regional Conference</a></li>
+                                  </ul>
+                              </li>
 
-                            <li class="dropdown">
+                              <li class="dropdown">
                                 <a class="dropdown-toggle" href="#">
-                                    ABOUT <i class="fa fa-angle-down"></i>
+                                  EDUCATION <i class="fa fa-angle-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <!-- Public Content -->
-                                    <li><a href="https://iahsp.com/history"><i class="fa fa-info-circle" aria-hidden="true"></i> History</a></li>
-                                    <li><a href="https://iahsp.com/board"><i class="fa fa-users" aria-hidden="true"></i> Board</a></li>
-                                    <li><a href="https://pages.iahsp.com/contact/"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</a></li>
+                                  <!-- Public Content -->
+                                  <li><a href="https://pages.iahsp.com/bts-designation-course"><i class="fa fa-external-link" aria-hidden="true"></i> Earn Your Buyer Trends Designation</a></li>
+                                  <li><a href="https://pages.iahsp.com/fast-track"><i class="fa fa-external-link" aria-hidden="true"></i> FAST Track Designation</a></li>
                                 </ul>
-                            </li>
-                            
-                            <!-- Resources: Logged In -->
-                            <li class="dropdown mega-menu-item mega-menu-fullwidth">
-                                <a class="dropdown-toggle" href="#">
-                                    <i class="fa fa-lock" aria-hidden="true"></i> RESOURCES <i class="fa fa-angle-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <div class="mega-menu-content">
-                                            <div class="row">
-																							
-                                                <!-- PUBLIC Content -->
-                                                <div class="col-md-4">
-                                                    <ul class="sub-menu">
-                                                        <li>
-                                                            <span class="mega-menu-sub-title">Members Only</span>
-                                                            <small>You need to sign in to view membership content.</small>
-                                                            <ul class="sub-menu">
-                                                                <li><a href="https://iahsp.com/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-                                                                <li><a href="https://iahsp.com/register"><i class="fa fa-check" aria-hidden="true"></i> IAHSP Membership Registration</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <ul class="sub-menu">
-                                                        <li>
-                                                            <span class="mega-menu-sub-title">More IAHSP Resources</span>
-                                                            <ul class="sub-menu">
-                                                                <li><a href="http://www.iahspconexpo.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> 2018 IAHSP Conference</a></li>
-                                                                <li><a href="https://iahspvendordirectory.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> IAHSP Vendor Directory</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div><!-- /row -->
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
+                              </li>
+
+                              <li class="dropdown">
+                                  <a class="dropdown-toggle" href="#">
+                                      ABOUT <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <!-- Public Content -->
+                                      <li><a href="https://iahsp.com/history"><i class="fa fa-info-circle" aria-hidden="true"></i> History</a></li>
+                                      <li><a href="https://iahsp.com/board"><i class="fa fa-users" aria-hidden="true"></i> Board</a></li>
+                                      <li><a href="https://pages.iahsp.com/contact/"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</a></li>
+                                  </ul>
+                              </li>
+
+                              <!-- Resources: Logged In -->
+                              <li class="dropdown mega-menu-item mega-menu-fullwidth">
+                                  <a class="dropdown-toggle" href="#">
+                                      <i class="fa fa-lock" aria-hidden="true"></i> RESOURCES <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li>
+                                          <div class="mega-menu-content">
+                                              <div class="row">
+
+                                                  <!-- PUBLIC Content -->
+                                                  <div class="col-md-4">
+                                                      <ul class="sub-menu">
+                                                          <li>
+                                                              <span class="mega-menu-sub-title">Members Only</span>
+                                                              <small>You need to sign in to view membership content.</small>
+                                                              <ul class="sub-menu">
+                                                                  <li><a href="https://iahsp.com/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                                                                  <li><a href="https://iahsp.com/register"><i class="fa fa-check" aria-hidden="true"></i> IAHSP Membership Registration</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                      <ul class="sub-menu">
+                                                          <li>
+                                                              <span class="mega-menu-sub-title">More IAHSP Resources</span>
+                                                              <ul class="sub-menu">
+                                                                  <li><a href="http://www.iahspconexpo.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> 2018 IAHSP Conference</a></li>
+                                                                  <li><a href="https://iahspvendordirectory.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> IAHSP Vendor Directory</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                              </div><!-- /row -->
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </li>
+                            </ul>
+                          <?php } else { ?>
+                            <!-- Register WP Menu -->
+                            <?php wp_nav_menu(array(
+                              "container"       => "ul",
+                              "menu_id"         => "topMain",
+                              "theme_location"  => "main-menu",
+                              "menu_class"      => "nav nav-pills nav-main scroll-menu",
+                              "walker"          => new MenuMainWalker
+                            )); ?>
+                          <?php } ?>
                         </ul>
                     </nav>
                 </div>

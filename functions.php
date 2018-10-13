@@ -41,11 +41,53 @@ function velvet_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+  
+  /**
+   * Register menus.
+   */
+  function register_my_menus() {
+    register_nav_menus(
+      array(
+        'menu-1' => esc_html__( 'Primary', 'velvet' ),
+        'top-menu' => __( 'Top Menu', "velvet" ),
+        'main-menu' => __( 'Main Menu', "velvet" )
+      )
+    );
+  }
+  add_action( 'init', 'register_my_menus' );
+  
+  /** 
+   * Customize Main Menu.
+   */
+  class MenuMainWalker extends Walker_Nav_Menu {
+    // Adds dropdown-menu class
+    function start_lvl( &$output, $depth = 0, $args = array() ) {
+      $indent = str_repeat("\t", $depth);
+          $output .= "\n$indent<ul class='dropdown-menu'>\n";
+    } // start_lvl
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'velvet' ),
-	) );
+    function end_lvl( &$output, $depth = 0, $args = array() ) {
+          $indent = str_repeat("\t", $depth);
+          $output .= "$indent</ul>\n";
+      } // end_lvl
+    // Add dropdowns after first <li>
+    
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+          if($depth == 0) {
+        $output .= sprintf( '<li class="dropdown"><a href="' . $item->url . '" class="dropdown-toggle">' . $item->title . '</a>',
+          $item->url,
+          ( $item->object_id === get_the_ID() ) ? ' class="current"' : '',
+          $item->title
+        );
+      } else {
+        $output .= sprintf( '<li class=""><a href="' . $item->url . '">' . $item->title . '</a>',
+          $item->url,
+          ( $item->object_id === get_the_ID() ) ? ' class="current"' : '',
+          $item->title
+        );
+      }
+    } // start_el()
+  } // MenuMainWalker
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments

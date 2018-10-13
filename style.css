@@ -47,6 +47,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /* Background Colors */
 .bg-color-white { background-color: #fff !important; }
 
+/* Text */
+.text-bold { font-weight: bold; }
+
 
 /* ====================================================
 	# Sections

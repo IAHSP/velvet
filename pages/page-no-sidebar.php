@@ -6,8 +6,6 @@
 get_header(); ?>
 
 <div id="wrapper" class="bg-color-white" style="margin-top: 40px">
-	<!-- Header -->
-	
 	<!-- Body -->
 	<section class="bg-color-white">
 		<div class="container">
