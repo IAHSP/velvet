@@ -19,6 +19,8 @@ get_header(); ?>
   
   h2 { margin: 40px 0 40px 0; }
   h3 { margin: 40px 0 20px 0; }
+  
+  .widget-area .panel-heading { margin-bottom: 10px; }
 </style>
 
 <div id="wrapper" class="bg-color-white" style="margin-top: 40px">

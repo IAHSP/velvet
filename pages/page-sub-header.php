@@ -9,6 +9,9 @@
 $objThePost = get_post();
 
 get_header(); ?>
+<style>
+  hr { margin: 20px 0;}
+</style>
 
 <div id="wrapper" class="bg-color-white">
 	<!-- Page Title -->
