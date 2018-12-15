@@ -167,18 +167,15 @@ function wpcf7_success_redirects() {
 	<script type="text/javascript">
 		document.addEventListener( 'wpcf7mailsent', function( event ) {
 			if ( '120' == event.detail.contactFormId ) { // Sends sumissions on form 947 to the first thank you page
-				// Run some API.
-				
 				// Redirect to success page.
 				location = "https://www.eventbrite.com/e/2018-iahsp-conference-expo-tickets-36424043294";
 			} else if ( '122' == event.detail.contactFormId ) { // Sends submissions on form 1070 to the second thank you page
-				// Run some API.
-				
 				// Redirect to success page.
 				location = "https://iahsp.com/europe/conference-2018";
+      } else if ( '464' == event.detail.contactFormId ) { // Sends submissions to Latin America registration page.
+				// Redirect to success page.
+				location = "https://iahsp.com/latin-america/register";
 			} else { // Sends submissions on all unaccounted for forms to the third thank you page
-				// Run some API.
-				
 				// Redirect to success page.
 				location = "https://pages.iahsp.com/thank-you/";
 			} // if
