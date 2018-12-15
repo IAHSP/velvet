@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Gutenberg
 # Common Style
 	- Margin
 	- Background Colors
@@ -38,6 +39,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
+	# Gutenberg
+--------------------------------------------------------------*/
+.wp-block-button__link:not(.has-background), .wp-block-button__link:not(.has-background):active, .wp-block-button__link:not(.has-background):focus, .wp-block-button__link:not(.has-background):hover {
+  background-color: #EAA824;
+}
+
+/*--------------------------------------------------------------
 	# Common Style
 --------------------------------------------------------------*/
 /* margin */
@@ -46,6 +54,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 /* Background Colors */
 .bg-color-white { background-color: #fff !important; }
+
+/* Text */
+.text-bold { font-weight: bold; }
 
 
 /* ====================================================
