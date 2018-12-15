@@ -59,7 +59,7 @@
 	<!-- copyright , scrollTo Top -->
 	<div class="footer-bar">
 		<div class="container">
-			<span class="copyright text-white">Copyright &copy; 2016 IAHSP&reg; . All Rights Reserved.</span>
+			<span class="copyright text-white">Copyright &copy; <?php echo date("Y"); ?> IAHSP&reg; . All Rights Reserved.</span>
 			<a class="toTop text-white" href="#topNav">BACK TO TOP <i class="fa fa-arrow-circle-up"></i></a>
 		</div>
 	</div>
