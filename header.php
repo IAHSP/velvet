@@ -136,47 +136,76 @@
                           <?php if ($_SERVER["SERVER_NAME"] === "pages.iahsp.com") { ?>
                             <ul class="nav nav-pills nav-main scroll-menu" id="topMain">
                               <li><a href="https://iahsp.com/">HOME</a></li>
-                              <li><a href="https://iahsp.com/join">JOIN</a></li>
-                              <li><a href="https://iahsp.com/wwssw">WWSSW</a></li>
+                              <li><a href="https://iahsp.com/directory-map">MEMBERS</a></li>
+                              
+                              <li class="dropdown">
+                                  <a class="dropdown-toggle" href="#">
+                                      JOIN <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="https://iahspeurope.com/join-iahspeurope/" target="_blank"><i class="fa fa-user-plus" aria-hidden="true"></i> IAHSP<sup>®</sup> Europe</a></li>
+                                      <li><a href="https://iahsp.com/latin-america/register"><i class="fa fa-user-plus" aria-hidden="true"></i> IAHSP<sup>®</sup> Latin America</a></li>
+                                  </ul>
+                              </li>
+                              
+                              <li class="dropdown">
+                                  <a class="dropdown-toggle" href="#">
+                                      GIVING BACK <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="https://pages.iahsp.com/iahsp-foundation/"><i class="fa fa-university" aria-hidden="true"></i> IAHSP<sup>®</sup> Foundation</a></li>
+                                      <li><a href="https://iahsp.com/wwssw"><i class="fa fa-globe" aria-hidden="true"></i> World Wide Staging Service Week</a></li>
+                                  </ul>
+                              </li>
 
+                               <li class="dropdown">
+                                  <a class="dropdown-toggle" href="#">
+                                      AWARDS <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="http://iahspstagingindustryawards.com" target="_blank"><i class="fa fa-star" aria-hidden="true"></i> 2018 IAHSP<sup>®</sup> Staging Industry Awards</a></li>
+                                      <li><a href="http://bestofiahsp.com"><i class="fa fa-star" aria-hidden="true"></i> Best of IAHSP<sup>®</sup> Awards</a></li>
+                                  </ul>
+                              </li>
+                              
                               <li class="dropdown">
                                   <a class="dropdown-toggle" href="#">
                                       EVENTS <i class="fa fa-angle-down"></i>
                                   </a>
                                   <ul class="dropdown-menu">
-                                      <!-- Public Content -->
-                                      <li><a href="https://iahspconexpo.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> 2018 IAHSP Conference</a></li>
-                                      <li><a href="https://www.eventbrite.com/e/iahsp-midwest-regional-conference-tickets-36834420744" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> IAHSP Midwest Regional Conference</a></li>
+                                      <li><a href="https://pages.iahsp.com/wholesale-market-experience/"><i class="fa fa-calendar-o" aria-hidden="true"></i> Shop Wholesale Markets</a></li>
                                   </ul>
                               </li>
-
+                              
                               <li class="dropdown">
-                                <a class="dropdown-toggle" href="#">
-                                  EDUCATION <i class="fa fa-angle-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <!-- Public Content -->
-                                  <li><a href="https://pages.iahsp.com/bts-designation-course"><i class="fa fa-external-link" aria-hidden="true"></i> Earn Your Buyer Trends Designation</a></li>
-                                  <li><a href="https://pages.iahsp.com/fast-track"><i class="fa fa-external-link" aria-hidden="true"></i> FAST Track Designation</a></li>
-                                </ul>
+                                  <a class="dropdown-toggle" href="#">
+                                      EDUCATION <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="https://pages.iahsp.com/about_accreditations/"><i class="fa fa-star" aria-hidden="true"></i>About Accreditations</a></li>
+                                      <li><a href="https://d3oaxt0bwkjnjn.cloudfront.net/web/images/aspm-promo-flyer-sept-2018-all-inclusive.jpg" target="_blank"><i class="fa fa-bullhorn" aria-hidden="true"></i>ASPM Course Promo</a></li>
+                                      <li><a href="https://pages.iahsp.com/bts-designation-course"><i class="fa fa-book" aria-hidden="true"></i>Earn Your Buyer Trends Designation</a></li>
+                                      <li><a href="https://iahsp.com/members/fast-track"><i class="fa fa-book" aria-hidden="true"></i>Focused Accelerated Stager Training</a></li>
+                                      <li><a href="https://pages.iahsp.com/iahsp-approved-courses/"><i class="fa fa-book" aria-hidden="true"></i>IAHSP<sup>®</sup> Approved Home Staging Courses</a></li>
+                                      <li><a href="https://pages.iahsp.com/iahsp-messages-for-motivation/"><i class="fa fa-comment" aria-hidden="true"></i>IAHSP<sup>®</sup> Motivational Messages</a></li>
+                                  </ul>
                               </li>
-
+                              
                               <li class="dropdown">
                                   <a class="dropdown-toggle" href="#">
                                       ABOUT <i class="fa fa-angle-down"></i>
                                   </a>
                                   <ul class="dropdown-menu">
-                                      <!-- Public Content -->
-                                      <li><a href="https://iahsp.com/history"><i class="fa fa-info-circle" aria-hidden="true"></i> History</a></li>
-                                      <li><a href="https://iahsp.com/board"><i class="fa fa-users" aria-hidden="true"></i> Board</a></li>
-                                      <li><a href="https://pages.iahsp.com/contact/"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</a></li>
+                                      <li><a href="https://pages.iahsp.com/about_accreditations/"><i class="fa fa-star" aria-hidden="true"></i>About Accreditations</a></li>
+                                      <li><a href="https://iahsp.com/history"><i class="fa fa-info-circle" aria-hidden="true"></i>History</a></li>
+                                      <li><a href="https://iahsp.com/board"><i class="fa fa-users" aria-hidden="true"></i>Board</a></li>
+                                      <li><a href="https://pages.iahsp.com/contact/"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
                                   </ul>
                               </li>
 
-                              <!-- Resources: Logged In -->
                               <li class="dropdown mega-menu-item mega-menu-fullwidth">
                                   <a class="dropdown-toggle" href="#">
-                                      <i class="fa fa-lock" aria-hidden="true"></i> RESOURCES <i class="fa fa-angle-down"></i>
+                                      RESOURCES <i class="fa fa-angle-down"></i>
                                   </a>
                                   <ul class="dropdown-menu">
                                       <li>
@@ -196,13 +225,65 @@
                                                           </li>
                                                       </ul>
                                                   </div>
+                                                
                                                   <div class="col-md-4">
                                                       <ul class="sub-menu">
                                                           <li>
                                                               <span class="mega-menu-sub-title">More IAHSP Resources</span>
                                                               <ul class="sub-menu">
-                                                                  <li><a href="http://www.iahspconexpo.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> 2018 IAHSP Conference</a></li>
-                                                                  <li><a href="https://iahspvendordirectory.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> IAHSP Vendor Directory</a></li>
+                                                                  <li><a href="https://iahsp.com/#blog"><i class="fa fa-rss" aria-hidden="true"></i> IAHSP<sup>®</sup> News</a></li>
+                                                                  <li><a href="https://iahspvendordirectory.com" target="_blank" rel="noopener"><i class="fa fa-th-list" aria-hidden="true"></i> IAHSP<sup>®</sup> Vendor Directory</a></li>
+                                                                  <li><a href="https://iahsp.com/staging-statistics"><i class="fa fa-line-chart" aria-hidden="true"></i> Home Staging Statistics</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                                
+                                                  <div class="col-md-4">
+                                                      <ul class="sub-menu">
+                                                          <li>
+                                                              <span class="mega-menu-sub-title">Affiliate Associations</span>
+                                                              <ul class="sub-menu">
+                                                                  <div class="col-md-6">
+                                                                    <li><a href="https://iahspeurope.com/home-stagers/italy/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Italy</a></li>
+                                                                    <li><a href="https://iahspeurope.com/home-stagers/france/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>France</a></li>
+                                                                    <li><a href="https://iahspeurope.com/home-stagers/spain/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Spain</a></li>
+                                                                    <li><a href="https://iahspeurope.com/home-stagers/united-kingdom/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>UK</a></li>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <li><a href="https://iahspeurope.com/home-stagers/germany/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Germany</a></li>
+                                                                    <li><a href="https://iahspeurope.com/home-stagers/austria/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Austria</a></li>
+                                                                    <li><a href="https://iahspeurope.com/home-stagers/switzerland/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Switzerland</a></li>
+                                                                </div>
+                                                              </ul>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                                
+                                                <div class="clearfix space-bottom-15 hidden-xs hidden-sm"></div>
+                                                
+                                                  <div class="col-md-4">
+                                                      <ul class="sub-menu">
+                                                          <li>
+                                                              <span class="mega-menu-sub-title">IAHSP<sup>®</sup> International Chapters</span>
+                                                              <ul class="sub-menu">
+                                                                  <li><a href="https://iahspeurope.com/" target="_blank" rel="noopener"><i class="fa fa-globe" aria-hidden="true"></i>IAHSP<sup>®</sup> Europe</a></li>
+                                                                  <li><a href="https://pages.iahsp.com/iahsp-latin-america/" target="_blank" rel="noopener"><i class="fa fa-globe" aria-hidden="true"></i>IAHSP<sup>®</sup> Latin America</a></li>
+                                                                  <li><a href="https://pages.iahsp.com/iahsp-canada/" target="_blank" rel="noopener"><i class="fa fa-globe" aria-hidden="true"></i>IAHSP<sup>®</sup> Canada</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                                
+                                                  <div class="col-md-4">
+                                                      <ul class="sub-menu">
+                                                          <li>
+                                                              <span class="mega-menu-sub-title">Archives</span>
+                                                              <ul class="sub-menu">
+                                                                  <li><a href="https://iahspconexpo.com" target="_blank" rel="noopener"><i class="fa fa-users" aria-hidden="true"></i>2019 IAHSP<sup>®</sup> Conference</a></li>
+                                                                  <li><a href="https://iahspeurope.com" target="_blank" rel="noopener"><i class="fa fa-users" aria-hidden="true"></i>2019 IAHSP<sup>®</sup> Europe Conference</a></li>
+                                                                  <li><a href="https://www.eventbrite.com/e/iahsp-midwest-regional-conference-tickets-36834420744" target="_blank" rel="noopener"><i class="fa fa-users" aria-hidden="true"></i>IAHSP<sup>®</sup> Midwest Regional Conference</a></li>
+                                                                  <li><a href="https://www.eventbrite.com/e/iahsp-southern-regional-conference-tickets-39090061426" target="_blank" rel="noopener"><i class="fa fa-users" aria-hidden="true"></i>IAHSP<sup>®</sup> Southern Conference</a></li> 
                                                               </ul>
                                                           </li>
                                                       </ul>
