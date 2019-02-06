@@ -217,6 +217,9 @@ function wpcf7_success_redirects() {
       } else if ( '464' == event.detail.contactFormId ) { // Sends submissions to Latin America registration page.
 				// Redirect to success page.
 				location = "https://iahsp.com/latin-america/register";
+      } else if ( '691' == event.detail.contactFormId ) { // Sends submissions to Latin America registration page.
+				// Redirect to success page.
+				location = "https://www.cvent.com/events/high-point-spring-market-wholesale-experience/registration-438ac20f7fae475c85a0620157d65ecb.aspx";
 			} else { // Sends submissions on all unaccounted for forms to the third thank you page
 				// Redirect to success page.
 				location = "https://pages.iahsp.com/thank-you/";
