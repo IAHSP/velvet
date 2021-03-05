@@ -34,6 +34,9 @@
 				Home Stager and Realtor<sup>&reg;</sup> as they prepare homes for sale. IAHSP<sup>&reg;</sup> members strive to serve the public to the best of their ability 
 				built upon the principles, practices, and education of approved Home Staging courses and designations.
 			</p>
+      <p class="text-center">
+          By providing this information you agree to receive text and email from StagedHomes.com<sup>&reg;</sup> and or IAHSP<sup>&reg;</sup>
+      </p>
 			<address class="font-opensans">
 				<ul class="list-inline text-center">
 					<li>
@@ -50,7 +53,6 @@
 
 			<div class="text-center">
 				<a href="https://www.facebook.com/InternationalAssociationofHomeStagingProfessionals/" target="_blank" class="social rounded fa fa-facebook" target="_blank"></a>
-				<a href="https://plus.google.com/111999019043473881716" target="_blank" class="social rounded fa fa-google-plus"></a>
 				<a href="https://iahspblog.com/" target="_blank" class="social rounded fa fa-wordpress"></a>
 			</div>
 		</div>
@@ -66,7 +68,7 @@
 	<!-- copyright , scrollTo Top -->			
 </footer>
 
-<script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/jquery-2.2.3.min.js"></script>
+<!-- <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/jquery-2.2.3.min.js"></script> -->
 <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/jquery.cookie.js"></script>
 <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/jquery.appear.js"></script>
@@ -81,9 +83,9 @@
 <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/superslides/dist/jquery.superslides.min.js"></script>
 <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/styleswitcher/styleswitcher.js"></script>
 <!-- <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/mediaelement/build/mediaelement-and-player.min.js"></script> -->
-<script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/slider.revolution.v4/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/slider.revolution.v4/js/jquery.themepunch.revolution.js"></script>
-<script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/js/slider_revolution.js"></script>
+<!-- <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/slider.revolution.v4/js/jquery.themepunch.tools.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/plugins/slider.revolution.v4/js/jquery.themepunch.revolution.js"></script> -->
+<!-- <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/js/slider_revolution.js"></script> -->
 
 <script type="text/javascript" src="https://d3oaxt0bwkjnjn.cloudfront.net/web/template/HTML/assets/js/scripts.js"></script>
 
