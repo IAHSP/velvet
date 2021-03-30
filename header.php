@@ -8,6 +8,18 @@
  *
  * @package Velvet
  */
+global $woocommerce;
+$cartCount = $woocommerce->cart->cart_contents_count;
+
+$isVendor = false;
+$user = wp_get_current_user();
+//echo "<pre style='margin-top: 200px;'>" . print_r($user->roles, true) . "</pre>";
+if (
+  in_array( 'seller', (array) $user->roles ) ||
+  in_array( 'administrator', (array) $user->roles )
+) {
+  $isVendor = true;
+}
 
 ?>
   <!doctype html>
@@ -152,6 +164,7 @@
                       <ul class="sub-menu">
                         <li><a href="https://iahsp.com/directory"><i class="fa fa-user" aria-hidden="true"></i>Members Directory Listing</a></li>
                         <li><a href="https://iahsp.com/directory-map"><i class="fa fa-globe" aria-hidden="true"></i>Members Map</a></li>
+                        <li><a href="https://www.iahspeurope.com/members/" target="_blank" rel="noopener"><i class="fa fa-user" aria-hidden="true"></i>IAHSP EU Members</a></li>
                       </ul>
                     </div>
 
@@ -190,16 +203,9 @@
                           <span class="mega-menu-sub-title">Affiliate Associations</span>
                           <ul class="sub-menu">
                             <div class="col-md-6">
-                              <li><a href="https://iahspeurope.com/home-stagers/italy/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Italy</a></li>
-                              <li><a href="https://iahspeurope.com/home-stagers/france/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>France</a></li>
-                              <li><a href="https://iahspeurope.com/home-stagers/spain/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Spain</a></li>
-                              <li><a href="https://iahspeurope.com/home-stagers/united-kingdom/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>UK</a></li>
-                            </div>
-
-                            <div class="col-md-6">
-                              <li><a href="https://iahspeurope.com/home-stagers/germany/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Germany</a></li>
-                              <li><a href="https://iahspeurope.com/home-stagers/austria/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Austria</a></li>
-                              <li><a href="https://iahspeurope.com/home-stagers/switzerland/" target="_blank" rel="noopener"><i class="fa fa-flag" aria-hidden="true"></i>Switzerland</a></li>
+                              <li><a href="https://ahse.es/en/ahse/" target="_blank" rel="noopener">Spain</a></li>
+                              <li><a href="http://hsvs.ch/" target="_blank" rel="noopener">Switzerland</a></li>
+                              <li><a href="http://www.homestaging.org.uk/" target="_blank" rel="noopener">UK</a></li>
                             </div>
                           </ul>
                         </li>
@@ -261,7 +267,7 @@
                         <li><a href="https://iahspvirtualconexpo.com/" target="_blank" rel="noopener"><i class="fa fa-globe" aria-hidden="true"></i>2020 IAHSP<sup>&reg;</sup> Virtual Conference &amp; Expo</a></li>
                         <li><a href="https://iahspconexpo.com/2019" target="_blank" rel="noopener"><i class="fa fa-globe" aria-hidden="true"></i>2019 IAHSP<sup>&reg;</sup> Conference Expo</a></li>
                         <li><a href="https://iahspconexpo.com/2018" target="_blank" rel="noopener"><i class="fa fa-globe" aria-hidden="true"></i>2018 IAHSP<sup>&reg;</sup> Conference Expo</a></li>
-                        <li><a href="https://iahsp.com/wholesale-market-experience"><i class="fa fa-calendar-o" aria-hidden="true"></i>Shop Wholesale Markets</a></li>
+                        <li><a href="https://pages.iahsp.com/wholesale-market-experience/"><i class="fa fa-calendar-o" aria-hidden="true"></i>Shop Wholesale Markets</a></li>
                       </ul>
                     </div>
 
@@ -296,10 +302,10 @@
                         <li>
                           <ul class="sub-menu">
                             <li><a href="https://pages.iahsp.com/about_accreditations/"><i class="fa fa-star" aria-hidden="true"></i>About Accreditations</a></li>
-                            <li><a href="https://iahsp.com/advanced-stager-training"><i class="fa fa-star" aria-hidden="true"></i>Advanced Stager Training</a></li>
+                            <li><a href="https://pages.iahsp.com/advanced-stager-training/"><i class="fa fa-star" aria-hidden="true"></i>Advanced Stager Training</a></li>
                             <li><a href="https://pages.stagedhomes.com/become-a-master-stager/" target="_blank" rel="noopener"><i class="fa fa-bullhorn" aria-hidden="true"></i>ASPM Course Promo</a></li>
                             <li><a href="https://pages.iahsp.com/add-home-staging-to-design-business/"><i class="fa fa-home" aria-hidden="true"></i>Adding Home Staging to a Design Business</a></li>
-                            <li><a href="https://iahsp.com/buyer-trends-specialist"><i class="fa fa-book" aria-hidden="true"></i>Buyer Trends Designation</a></li>
+                            <li><a href="https://pages.iahsp.com/bts-buyer-trends-specialist-course/"><i class="fa fa-book" aria-hidden="true"></i>Buyer Trends Designation</a></li>
                             <li><a href="https://coloranddesignforstagers.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-paint-brush" aria-hidden="true"></i>Color and Design Principles for Stagers</a></li>
                             <li><a href="https://pages.iahsp.com/confident-color-system-course/"><i class="fa fa-paint-brush" aria-hidden="true"></i>Confident Color System Course</a></li>                                                                            
                           </ul>
@@ -311,12 +317,12 @@
                       <ul class="sub-menu">
                         <li>
                           <ul class="sub-menu">                            
-                            <li><a href="https://iahsp.com/cultural-diversity-expert"><i class="fa fa-user" aria-hidden="true"></i>Cultural Diversity Expert</a></li>                            
+                            <li><a href="https://pages.iahsp.com/cultural-diversity-expert/"><i class="fa fa-user" aria-hidden="true"></i>Cultural Diversity Expert</a></li>                            
                             <li><a href="https://iahsp.com/financial-and-business-planning-webinar"><i class="fa fa-book" aria-hidden="true"></i>Financial &amp; Business Planning Webinar</a></li>
                             <li><a href="https://iahsp.com/members/fast-track"><i class="fa fa-book" aria-hidden="true"></i>Focused Accelerated Stager Training</a></li>
                             <li><a href="https://pages.iahsp.com/iahsp-approved-courses/"><i class="fa fa-book" aria-hidden="true"></i>IAHSP<sup>&reg;</sup> Approved Home Staging Courses</a></li>
                             <li><a href="https://pages.iahsp.com/iahsp-coaching-program/"><i class="fa fa-book" aria-hidden="true"></i>IAHSP<sup>&reg;</sup> Coaching Program</a></li>
-                            <li><a href="https://iahsp.com/investor-staging-consultant"><i class="fa fa-book" aria-hidden="true"></i>Investor Staging Consultant</a></li>
+                            <li><a href="https://pages.iahsp.com/investor-staging-consultant-lead-page/"><i class="fa fa-book" aria-hidden="true"></i>Investor Staging Consultant</a></li>
                             
                           </ul>
                         </li>
@@ -328,11 +334,11 @@
                         <li>
                           <ul class="sub-menu">
                             <li><a href="https://pages.iahsp.com/iahsp-messages-for-motivation/"><i class="fa fa-comment" aria-hidden="true"></i>IAHSP<sup>&reg;</sup> Motivational Messages</a></li>
-                            <li><a href="https://iahsp.com/luxury-home-staging-webinar"><i class="fa fa-book" aria-hidden="true"></i>Luxury Home Staging Webinar</a></li>
+                            <li><a href="https://pages.iahsp.com/earn-your-luxury-home-specialist-designation-lhs/"><i class="fa fa-book" aria-hidden="true"></i>Luxury Home Staging Webinar</a></li>
                             <li><a href="https://pages.iahsp.com/photographyforhomestagersandrealtors/"><i class="fa fa-camera" aria-hidden="true"></i>Photography Course</a></li>
-                            <li><a href="https://iahsp.com/pricing-strategies-for-home-stagers"><i class="fa fa-usd" aria-hidden="true"></i>Pricing Strategies for Home Stagers</a></li>
-                            <li><a href="https://iahsp.com//senior-staging-specialist"><i class="fa fa-home" aria-hidden="true"></i>Senior Staging Specialist</a></li>
-                            <li><a href="https://iahsp.com/short-term-rental-specialist"><i class="fa fa-sticky-note" aria-hidden="true"></i>Short Term Rental Specialist</a></li>                  
+                            <li><a href="https://pages.iahsp.com/pricing-strategies-for-home-stagers/"><i class="fa fa-usd" aria-hidden="true"></i>Pricing Strategies for Home Stagers</a></li>
+                            <li><a href="https://pages.iahsp.com/senior-staging-specialist/"><i class="fa fa-home" aria-hidden="true"></i>Senior Staging Specialist</a></li>
+                            <li><a href="https://pages.iahsp.com/short-term-rental-specialist-designation/"><i class="fa fa-sticky-note" aria-hidden="true"></i>Short Term Rental Specialist</a></li>                  
                           </ul>
                         </li>
                       </ul>
@@ -393,6 +399,36 @@
                       </ul>
                     </div>
                   </div><!-- /row -->
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <!-- SHOP -->
+          <li class="dropdown mega-menu-item">
+            <a class="dropdown-toggle padding-right-8" href="#">
+              SHOP <i class="fa fa-angle-down"></i>
+            </a>
+            <!-- CSS overrides, since this is the last menu item, so that it lights to the right edge of screen-->
+            <ul class="dropdown-menu" style="left: auto; right: 0;">
+              <li>
+                <div class="mega-menu-content">
+                  <ul class="sub-menu">
+                    <li>
+                      <span class="mega-menu-sub-title">Savvy</span>
+                      <ul class="sub-menu">
+                        <li><a href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart (<?php echo $cartCount; ?>)</a></li>
+                        <li><a href="/shop"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Shop Products</a></li>
+                        <li><a href="/store-listing"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Shop by Vendor</a></li>
+                      </ul>
+                      <?php if ($isVendor): ?>
+                      <span class="mega-menu-sub-title">Vendors</span>
+                      <ul class="sub-menu">
+                        <li><a href="/dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashbaord</a></li>
+                      </ul>
+                      <?php endif; ?>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
